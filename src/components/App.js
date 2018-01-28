@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../styles/App.css';
 import Header from './Header.js';
 import Controls from './Controls.js';
+import CardContainer from './CardContainer';
 import apiKey from '../apikey';
 
 class App extends Component {
@@ -35,6 +36,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Controls addCity={this.addCity} />
+        <CardContainer weatherData={this.state.weatherData} />
       </div>
     );
   }
