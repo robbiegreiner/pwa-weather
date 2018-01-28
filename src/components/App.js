@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
 import '../styles/App.css';
 import Header from './Header.js';
 import apiKey from '../apikey';
@@ -9,17 +8,18 @@ class App extends Component {
     super();
     this.state = {
       weatherData : {},
+      city: 'Denver, Colorado'
     }
   }
 
   componentDidMount(){
-    this.fetchWeatherData("Denver, Colorado")
+    this.fetchWeatherData(this.state.city)
   }
 
   fetchWeatherData(city){
     fetch(`http://api.wunderground.com/api/${apiKey}/conditions/hourly/forecast10day/q/${city}.json`)
       .then(response => response.json())
-      .then(result => console.log(result));
+      .then(result => this.setState({ weatherData: result }));
   }
 
 
