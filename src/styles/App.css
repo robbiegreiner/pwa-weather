@@ -2,27 +2,54 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.city-input {
+  border: 1px solid gray;
+  padding: 3px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.input-button {
+  border: 1px solid gray;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-intro {
-  font-size: large;
+.city-card * {
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.city-card {
+  margin-top: 20px;
+  border: 2px solid black;
+  width: 90%;
+}
+
+.temp-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.current {
+  margin: 0 15% 0 15%;
+}
+
+/* .temps {
+  margin-left: 0;
+} */
+
+.city-card h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.city-card h3 {
+  margin-bottom: 5px;
 }

@@ -16,7 +16,9 @@ class Controls extends Component {
     return(
       <div>
         <input className="city-input" placeholder="Add A City" onChange={(event) => this.handleInput(event.target.value)}></input>
-        <button onClick={() => this.props.addCity(this.state.cityInput)}>add city</button>
+        <button
+          className="input-button"
+          onClick={() => this.props.addCity(this.state.cityInput)}>add city</button>
       </div>
     )
   }
