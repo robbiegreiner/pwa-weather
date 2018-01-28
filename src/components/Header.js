@@ -5,8 +5,9 @@ export default class Header extends Component {
 
   render(){
     return(
-      <div>
+      <div className='header'>
         <h1>PWA</h1>
+        <h4>progressive weather app</h4>
       </div>
     )
   }
