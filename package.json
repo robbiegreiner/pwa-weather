@@ -1,6 +1,5 @@
 {
   "name": "pwa-weather",
-  "homepage": "http://robbieg.io/pwa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
